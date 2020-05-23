@@ -1,0 +1,81 @@
+// Nombres de variables y propiedades deben ser descriptivos
+
+const yymmaaaa = new Date()
+const currentDate = new Date()
+
+// var, let, const
+var variable = 5
+{
+  console.log("value inside", variable)
+  variable = 10
+}
+
+console.log("value outside", variable)
+
+let variableLet1 = 5
+if(true) {
+  let variableLet1 = 10
+  console.log("value inside let", variableLet1)
+}
+
+console.log("value outside let", variableLet1)
+
+const variableLet2 = 5
+if(true) {
+  const variableLet2:number = 10
+  console.log("value inside const", variableLet2)
+  const listaUsuarios = []
+  listaUsuarios.push("Sergio")
+  // listaUsuarios = ["Carmen"]
+  console.log(listaUsuarios)
+}
+
+console.log("value outside const", variableLet2)
+
+class AbstractUser() {}
+class User() {}
+
+getUserInfo()
+getClientData()
+getCustomerRecord()
+
+getUser()
+
+//// Arreglos
+const fruits = []
+const fruitList = []
+const fruitNames = []
+
+// Boleanos
+const open = true
+const write = false
+const fruit = true
+
+const isOpen = true
+const canWrite = false
+const hasFruit = false
+
+// Números
+const fruits = 3
+
+const maxFruits = 5
+const minFruits = 2
+const totalFruits = 3
+
+// Funciones
+createUserIfNotEmpty()
+updateUserIfNotExists()
+sendEmailIfFieldsValid()
+
+createUser()
+updateUser()
+sendEmail()
+
+// Clases
+class User {}
+class UserProfile {}
+class Account {}
+
+class Data {}
+class Info {}
+class Processor {}
