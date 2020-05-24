@@ -1,22 +1,11 @@
 import express, { Request, Response } from 'express';
+import router from './routes/default.route';
+import routerProduct from './routes/product.route';
 
 const app = express();
 
-app.get('/', (req: Request, res: Response) => {
-  console.log('Route main');
-  res.send('Hola');
-});
-
-app.get('/product', (req: Request, res: Response) => {
-  const productList = [
-    { product: 'Product 01' },
-    { product: 'Product 01' },
-    { product: 'Product 01' },
-    { product: 'Product 01' },
-    { product: 'Product 01' },
-  ];
-  res.json(productList);
-});
+app.use('/', router);
+app.use('/product', routerProduct);
 
 app.use((req, res) => {
   console.log('Route not found');
