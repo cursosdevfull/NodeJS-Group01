@@ -13,7 +13,7 @@ const schema: Schema = new Schema({
 
   active: {
     type: Boolean,
-    defaultsTo: true,
+    default: 1,
   },
 });
 

@@ -1,6 +1,6 @@
 import { IRol, Rol } from '../models';
 
-export default class rolRepository {
+export default class RolRepository {
   async insertRole(rol: IRol) {
     const rolCreated = await Rol.create(rol);
 
@@ -20,14 +20,14 @@ export default class rolRepository {
   }
 
   async updateRole(_id: string, rol: IRol) {
-    const roleUpdated = await Rol.updateOne({ _id }, rol);
+    await Rol.updateOne({ _id }, rol);
 
-    return roleUpdated;
+    return { rol };
   }
 
   async deleteRole(_id: string) {
-    const roleDeleted = await Rol.updateOne({ _id }, { active: false });
+    await Rol.updateOne({ _id }, { active: false });
 
-    return roleDeleted;
+    return { _id };
   }
 }

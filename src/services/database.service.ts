@@ -1,9 +1,12 @@
 import mongoose from 'mongoose';
+import yenv from 'yenv';
+
+const env = yenv();
 
 const initializeDatabase = async () => {
   const startConnection = new Promise((resolve, reject) => {
     mongoose.connect(
-      'mongodb+srv://user-cursonode:cVWPOH5SDiXxQE75@cursonode-01ufq.mongodb.net/test?retryWrites=true&w=majority',
+      `mongodb+srv://${env.URL.MONGODB.USER}:${env.URL.MONGODB.PASS}@${env.URL.MONGODB.HOST}/${env.URL.MONGODB.DB}?retryWrites=true&w=majority`,
       {
         useNewUrlParser: true,
         useUnifiedTopology: true,
