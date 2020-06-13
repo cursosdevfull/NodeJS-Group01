@@ -1,0 +1,47 @@
+{
+  "name": "curso_nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "develop": "nodemon src/server.ts",
+    "lint:code": "eslint --ext ts src/ -f stylish",
+    "format": "prettier --write src/**/*.ts",
+    "format:fix": "eslint --ext ts src --fix",
+    "server": "cross-env NODE_ENV=production ts-node src/server.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cursosdevfull/NodeJS-Group01.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cursosdevfull/NodeJS-Group01/issues"
+  },
+  "homepage": "https://github.com/cursosdevfull/NodeJS-Group01#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cross-env": "^7.0.2",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.16",
+    "yenv": "^2.1.1"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/express": "^4.17.6",
+    "@types/mongoose": "^5.7.21",
+    "@typescript-eslint/eslint-plugin": "^3.0.2",
+    "@typescript-eslint/parser": "^3.0.2",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.1.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-filenames": "^1.3.2",
+    "eslint-plugin-prettier": "^3.1.3",
+    "prettier": "^2.0.5",
+    "ts-node": "^8.10.1",
+    "typescript": "^3.9.3"
+  }
+}
