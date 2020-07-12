@@ -39,7 +39,7 @@ docker pull phpmyadmin/phpmyadmin
 2. Create a volume
 
 ```
-docker volume create sessions-datadocker volume create sessions-data
+docker volume create sessions-data
 ```
 
 3. Create a container
