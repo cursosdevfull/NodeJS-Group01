@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.RoleMapping=void 0;class RoleMapping{static map(e){return{_id:e._id,roleName:e.roleName,isActive:e.isActive}}static mapArray(e){return e.map(e=>({_id:e._id,roleName:e.roleName,isActive:e.isActive}))}}exports.RoleMapping=RoleMapping;

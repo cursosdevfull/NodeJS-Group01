@@ -24,7 +24,7 @@ const getRedis = async (key: string) => {
 
 const setRedis = async (key: string, value: any) => {
   await clientConnection.set(key, value);
-  await clientConnection.client.expire(key, 24 * 60 * 60 * 1000);
+  // await clientConnection.client.expire(key, 24 * 60 * 60 * 1000);
 };
 
 export { getConnection, clearRedis, getRedis, setRedis };

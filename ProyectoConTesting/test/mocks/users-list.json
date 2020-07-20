@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "firstName": "Pedro",
+    "lastName": "Salinas",
+    "email": "psalinas@outlook.com",
+    "password": "xxxxxxxxxxxxxxxxxxxxxxxxxxx"
+  },
+  {
+    "id": 2,
+    "firstName": "Amelia",
+    "lastName": "Cruz",
+    "email": "acruz@outlook.com",
+    "password": "yyyyyyyyyyyyyyyyyyyy"
+  },
+  {
+    "id": 3,
+    "firstName": "Carmen",
+    "lastName": "Nieto",
+    "email": "cnieto@outlook.com",
+    "password": "zzzzzzzzzzzzzzzzz"
+  }
+]
