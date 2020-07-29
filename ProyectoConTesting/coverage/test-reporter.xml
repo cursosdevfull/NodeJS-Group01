@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testExecutions version="1">
+    <file path="D:\Sergio\repositorios\nodegroup2\ProyectoConTesting\test\unit\user.repository.spec.ts">
+        <testCase name="user.repository.ts list users from redis" duration="10"/>
+        <testCase name="user.repository.ts list users without redis" duration="2"/>
+        <testCase name="user.repository.ts insert user" duration="2"/>
+        <testCase name="user.repository.ts update user" duration="0"/>
+        <testCase name="user.repository.ts delete user" duration="2"/>
+    </file>
+    <file path="D:\Sergio\repositorios\nodegroup2\ProyectoConTesting\test\unit\user.controller.spec.ts">
+        <testCase name="user.controller.ts list users" duration="12"/>
+        <testCase name="user.controller.ts insert user" duration="2"/>
+    </file>
+    <file path="D:\Sergio\repositorios\nodegroup2\ProyectoConTesting\test\integration\user.spec.ts">
+        <testCase name="integration user get /user" duration="49"/>
+        <testCase name="integration user post /user" duration="37"/>
+        <testCase name="integration user put /user/:id" duration="91"/>
+    </file>
+</testExecutions>

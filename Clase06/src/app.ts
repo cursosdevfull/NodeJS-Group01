@@ -1,19 +1,15 @@
-import express, { Application, Request, Response } from 'express';
-import { UserController } from './controllers/user.controller';
+import express, { Application } from 'express';
 import attachRoutes from './utils/attach-routes.util';
+import { UserController } from './controllers/user.controller';
 import { PhotoController } from './controllers/photo.controller';
-import { UserRepository } from './repositories/user.repository';
-import { PhotoRepository } from './repositories/photo.repository';
 import { DefaultController } from './controllers/default.controller';
+import { PhotoRepository } from './repositories/photo.repository';
+import { UserRepository } from './repositories/user.repository';
 
 const app: Application = express();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-
-app.get('/', (req: Request, res: Response) => {
-  res.send('Inicio');
-});
 
 attachRoutes(app, [
   { class: UserController, dependencies: [UserRepository] },

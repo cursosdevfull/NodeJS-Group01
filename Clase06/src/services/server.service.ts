@@ -1,7 +1,7 @@
 import { Application } from 'express';
+import { MessageLog } from '../utils/message-log.util';
 import http from 'http';
 import yenv from 'yenv';
-import { MessageLog } from '../utils/message-log.util';
 
 const env = yenv();
 

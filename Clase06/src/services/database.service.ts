@@ -1,6 +1,6 @@
-import yenv from 'yenv';
 import { createConnection, Connection } from 'typeorm';
 import { MessageLog } from '../utils/message-log.util';
+import yenv from 'yenv';
 
 const env = yenv();
 

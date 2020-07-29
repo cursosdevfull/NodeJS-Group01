@@ -1,6 +1,6 @@
-projectKey=clase_nodejs
+projectKey=nodejs_curso
 serverUrl=http://localhost:9000
-serverVersion=8.3.1.34397
-dashboardUrl=http://localhost:9000/dashboard?id=clase_nodejs
-ceTaskId=AXMbBHrHARX5XLVFLO-h
-ceTaskUrl=http://localhost:9000/api/ce/task?id=AXMbBHrHARX5XLVFLO-h
+serverVersion=8.4.1.35646
+dashboardUrl=http://localhost:9000/dashboard?id=nodejs_curso
+ceTaskId=AXOJEAa2w5tBGM8OiXB8
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AXOJEAa2w5tBGM8OiXB8

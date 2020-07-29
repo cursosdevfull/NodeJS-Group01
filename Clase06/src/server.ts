@@ -1,6 +1,6 @@
 import { ServerService } from './services/server.service';
-import { MessageLog } from './utils/message-log.util';
 import { DatabaseService } from './services/database.service';
+import { MessageLog } from './utils/message-log.util';
 
 import app from './app';
 

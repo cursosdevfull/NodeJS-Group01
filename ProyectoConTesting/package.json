@@ -26,6 +26,18 @@
     "serve": "cross-env NODE_ENV=connection node dist/server.js",
     "server": "cross-env NODE_ENV=production ts-node src/server.ts"
   },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "testResultsProcessor": "jest-sonar-reporter"
+  },
+  "jestSonar": {
+    "reportPath": "coverage",
+    "reportFile": "test-reporter.xml",
+    "indent": 4
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cursosdevfull/NodeJS-Group01.git"

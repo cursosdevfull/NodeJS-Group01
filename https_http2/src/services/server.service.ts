@@ -1,7 +1,7 @@
-import fs from 'fs';
 import { Application } from 'express';
-import yenv from 'yenv';
 import Message from '../utils/message.util';
+import fs from 'fs';
+import yenv from 'yenv';
 import spdy from 'spdy';
 
 const env = yenv();
